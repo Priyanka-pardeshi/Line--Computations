@@ -14,7 +14,19 @@ namespace LineComputation
             Calculate_length Obj = new Calculate_length();
             float Line1=Obj.Calculate(1,1,1,2);
             float Line2 = Obj.Calculate(1,2,2,2);
-            Console.WriteLine(Line1.Equals(Line2));
+            
+            //Equals
+            Boolean Check_equality=Line1.Equals(Line2);
+            if (Check_equality == true)
+            {
+                Console.WriteLine("Lines are Equal in length");
+            }
+            else
+            {
+                Console.WriteLine("Lines are Not Equal");
+            }
+
+           
             Console.ReadKey(); 
         }
     }
