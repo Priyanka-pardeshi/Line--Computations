@@ -12,7 +12,7 @@ namespace LineComputation
         {
             Console.WriteLine("Program to calculate the length the the line");
             Calculate_length Obj = new Calculate_length();
-            float Line1=Obj.Calculate(1,1,1,2);
+            float Line1 = Obj.Calculate(1,1,1,2);
             float Line2 = Obj.Calculate(1,2,2,2);
             
             //Equals
@@ -26,7 +26,16 @@ namespace LineComputation
                 Console.WriteLine("Lines are Not Equal");
             }
 
-           
+            //compareTo
+            float Compare = Line1.CompareTo(Line2);
+            if (Compare == 0)
+            {
+                Console.WriteLine("Both Line are  Same");
+            }
+            else
+            {
+                Console.WriteLine("They are not Same");
+            }
             Console.ReadKey(); 
         }
     }
